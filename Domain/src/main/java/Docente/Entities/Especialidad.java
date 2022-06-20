@@ -10,7 +10,7 @@ public class Especialidad extends Entity<EspecialidadId> {
 
     private tipoEspecialidad tipoEspecialidad;
 
-    public Especialidad(EspecialidadId entityId) {
+    public Especialidad(EspecialidadId entityId, tipoEspecialidad tipoEspecialidad) {
         super(entityId);
         this.tipoEspecialidad = tipoEspecialidad;
     }
