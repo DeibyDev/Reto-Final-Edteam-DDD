@@ -1,12 +1,13 @@
-package Docente.Values;
+package Curso.Values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
-public class Correo implements ValueObject<String> {
+public class Contenido implements ValueObject<String> {
 
     private final String value;
 
-    public Correo(String value) {
+    public Contenido(String value) {
+
         this.value = value;
     }
 

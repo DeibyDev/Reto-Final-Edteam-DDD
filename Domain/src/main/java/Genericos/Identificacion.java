@@ -1,4 +1,4 @@
-package Docente.Values;
+package Genericos;
 
 import co.com.sofka.domain.generic.ValueObject;
 

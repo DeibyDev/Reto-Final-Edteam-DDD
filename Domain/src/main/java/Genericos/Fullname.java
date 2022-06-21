@@ -1,13 +1,14 @@
-package Docente.Values;
+package Genericos;
 
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class Identificacion implements ValueObject<String> {
+public class Fullname implements ValueObject<String> {
+
     private final String value;
 
-    public Identificacion(String value) {
+    public Fullname(String value) {
         this.value = Objects.requireNonNull(value);
         if(value.isBlank()){
             throw new IllegalArgumentException("No puede estar en blanco");
