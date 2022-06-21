@@ -1,6 +1,6 @@
 package Curso;
 
-import Curso.Commands.AgregarCurso;
+
 import Curso.Commands.CrearRepaso;
 import Curso.Events.CursoCreado;
 import Curso.Events.RepasoCreado;
@@ -52,7 +52,7 @@ import static org.mockito.Mockito.when;
                 .getDomainEvents();
 
         //assert
-        Assertions.assertEquals(2, events.size());
+        Assertions.assertEquals(1, events.size());
 
     }
 

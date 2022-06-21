@@ -1,8 +1,6 @@
 package Curso.Commands;
 
-import Curso.Identitis.CursoId;
-import Estudiante.Estudiante;
-import Estudiante.Identities.EstudianteId;
+import Curso.Identitis.CursoId;;
 import Factory.LessonFactory;
 import co.com.sofka.domain.generic.Command;
 

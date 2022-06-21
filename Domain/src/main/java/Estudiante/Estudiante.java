@@ -1,9 +1,7 @@
 package Estudiante;
 
-import Estudiante.Events.estudianteCreado;
-import Estudiante.Events.suscripcionCreada;
+import Estudiante.Events.*;
 import Estudiante.Entities.Suscripcion;
-import Estudiante.Events.suscripcionEditada;
 import Estudiante.Identities.EstudianteId;
 import Estudiante.Identities.SuscripcionId;
 import Estudiante.Values.Descripcion;
@@ -22,6 +20,7 @@ public class Estudiante extends AggregateEvent<EstudianteId> {
     protected Descripcion descripcion;
     protected SuscripcionId suscripcionId;
     protected Suscripcion suscripcion;
+    protected Estudiante estudiante;
 
     public Estudiante(EstudianteId entityId){
         super(entityId);
@@ -48,6 +47,7 @@ public class Estudiante extends AggregateEvent<EstudianteId> {
     public Estudiante(EstudianteId entityId, Correo correo, Fullname fullname, SuscripcionId suscripcionId, Identificacion identificacion) {
         super(entityId);
         appendChange(new estudianteCreado(entityId,correo,fullname,suscripcionId,identificacion)).apply();
+        subscribe(new EstudianteChange(this));
 
     }
 
@@ -65,6 +65,17 @@ public class Estudiante extends AggregateEvent<EstudianteId> {
     public void editarSuscripcion(TipoSuscripcion tipoSuscripcion, Descripcion descripcion,  SuscripcionId identity){
         appendChange(new suscripcionEditada(tipoSuscripcion, descripcion, identity)).apply();
     }
+
+    public void eliminarEstudiante(EstudianteId entityId, Correo correo, Fullname fullname, SuscripcionId suscripcionId, Identificacion identificacion){
+        appendChange(new estudianteEliminado(entityId, correo,fullname,suscripcionId,identificacion)).apply();
+    }
+
+    public void actualizarEstudiante(EstudianteId entityId, Correo correo, Fullname fullname, SuscripcionId suscripcionId, Identificacion identificacion){
+        appendChange(new estudianteEditado(entityId, correo, fullname,suscripcionId,identificacion)
+               ).apply();
+    }
+
+
 
 
 

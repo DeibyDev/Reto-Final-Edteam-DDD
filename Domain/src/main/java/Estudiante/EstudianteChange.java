@@ -1,9 +1,8 @@
 package Estudiante;
 
-import Docente.Docente;
-import Docente.Events.DocenteCreado;
-import Docente.Events.DocenteEditado;
 import Estudiante.Events.estudianteCreado;
+import Estudiante.Events.estudianteEditado;
+import Estudiante.Events.estudianteEliminado;
 import Estudiante.Events.suscripcionCreada;
 import co.com.sofka.domain.generic.EventChange;
 
@@ -17,9 +16,16 @@ public class EstudianteChange extends EventChange {
            estudiante.editarSuscripcion(event.getTipoSuscripcion(),event.getDescripcion(),event.getSuscripcionId());
        });
 
-       apply((estudianteCreado event)->{
+       apply((estudianteEditado event)->{
            estudiante.suscripcionId=null;
        });
+
+       apply((estudianteEliminado evento) ->{
+           estudiante.estudiante = null;
+
+       });
+
+
 
 
    }
