@@ -26,4 +26,19 @@ Somos la única plataforma de educación en línea completamente remota (desde 2
 
 [![imagen-2022-06-21-161556251.png](https://i.postimg.cc/Gp2L56kZ/imagen-2022-06-21-161556251.png)](https://postimg.cc/5XhWH7K3)
 
+### Modelo de Dominio :pencil2:
+[![Edteam-DDD-Modelo-de-Dominio-drawio-1.png](https://i.postimg.cc/Pxk5WdDL/Edteam-DDD-Modelo-de-Dominio-drawio-1.png)](https://postimg.cc/gwNpdFNd)
+
+### Solucion del Contexto
+[![Edteam-DDD-Soluci-n-del-contexto-drawio.png](https://i.postimg.cc/4yRZCPPm/Edteam-DDD-Soluci-n-del-contexto-drawio.png)](https://postimg.cc/Vrg2nj38)
+
+### Realizado Por: 
+[![logo-sofkau-1-Fn3u-H-1-S.webp](https://i.postimg.cc/5yZ4kyRg/logo-sofkau-1-Fn3u-H-1-S.webp)](https://postimg.cc/7Jnr5HDJ)
+
+ - DEIBY SIERRA MONROY
+
+### Link del diagrama del dominio
+
+[Diagrama de Dominio ](https://drive.google.com/file/d/1EAOMKHaqR0jk0O3vTKWf1frrso9_VASe/view?usp=sharing)
+
 
